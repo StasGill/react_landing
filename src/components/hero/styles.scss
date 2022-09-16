@@ -1,0 +1,97 @@
+.container {
+    max-width: 1140px;
+    min-width: 320px;
+    height: 100vh;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    @media only screen and (max-width: 600px) {
+        height: auto
+    }
+}
+
+.information {
+    max-width: 500px;
+    min-width: 320px;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: white;
+    // transform: scale(0.8);
+
+    h1 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 20px;
+        max-width: 450px;
+    }
+
+    button {
+        padding: 20px 40px;
+        border: none;
+        border-radius: 8px;
+        background-color: rgb(0, 146, 218);
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:hover {
+            transform: scale(1.05);
+            text-shadow: #777 0 0 3px;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &_navigation {
+        display: flex;
+
+        a {
+            display: block;
+            margin-right: 25px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                transform: scale(1.1);
+                text-shadow: #777 0 0 3px;
+                transition: all 0.3s;
+            }
+        }
+
+    }
+}
+
+.logo {
+    img {
+        width: 100px;
+        cursor: pointer;
+    }
+}
+
+.hero_section {
+    background-size: cover;
+    background-position: center;
+}
+
+.fadeIn {
+    transform: scale(1.02);
+    transition: all 0.5s ease-in-out;
+}
+
+// animate__fadeInDown
